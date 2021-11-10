@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "First blog.",
+            "body": "GetBaking is a company that is trying to encourage more people to bake at home.",
+            "author":" Dan",
+            "id": 1
+        },
+        {
+            "title":"GetBaking color scheme.",
+            "body":"GetBaking mainly uses #ff80c4 and #ffff80.",
+            "author": "Alex",
+            "id": 2
+        }
+    ]
+}
