@@ -66,8 +66,10 @@
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: #1f98f4;
+    background-color: #ff80ff;
     box-sizing: border-box;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
   }
   
   .cards__item__img {

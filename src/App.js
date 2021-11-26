@@ -6,6 +6,7 @@ import Create from './Create';
 import NotFound from './NotFound';
 import Home from './components/pages/Home';
 import BlogDetails from './BlogDetails';
+import Footer from './components/Footer';
 
 function App() {
   const title = "Welcome to the blog";
@@ -27,15 +28,17 @@ function App() {
             <Create />
             </Route>       
             <Route path="/blogs/:id">
-            <BlogDetails />
+            <BlogDetails />           
             </Route>
             <Route path="*">
               <NotFound />            
             </Route>
           </Switch>
+          <Footer/>
           </div>
       </div>
       </Router>
+
   );
 }
 //'/>

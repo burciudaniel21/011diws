@@ -4,14 +4,15 @@ import useFetch from './useFetch';
 const BlogsDisplay = () => {
     const {data: blogs, isLoading, error} = useFetch('http://localhost:8000/blogs');
 
-
     return ( 
         <div className="blogs">
         {error && <div>{error}</div>}
         {isLoading && <div>Loading...</div>}
         {blogs && <BlogList blogs={blogs} title="All Blogs"/>}
         </div>
+
     );
+
 }
 export default BlogsDisplay;
 //<button onClick={() => setName('Alex')}>Change name.</button> -> button on click event

@@ -19,9 +19,9 @@ const BlogDetails = () => {
          {isLoading && <div>Loading...</div>}
          {error && <div>{error}</div>}
          {blog && (
-             <article>
-                 <h2>{blog.title}</h2>
-                 <p>Written by {blog.author}</p>
+             <article className ='blog-content'>
+                 <h2 className='blog-title'>{blog.title}</h2>
+                 <p className = 'blog-written'>Written by {blog.author}</p>
                  <div>{blog.body}</div>
                  <button onClick={handleClick}>Delete</button>
              </article>
