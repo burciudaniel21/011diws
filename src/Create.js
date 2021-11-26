@@ -7,10 +7,13 @@ const Create = () => {
         const[author, setAuthor] = useState('Dan');
         const [isPending, setIsPending] = useState(false)
         const history = useHistory();
+        const [ingredients, setIngredients] = useState('');
+        const [instructions, setInstruction] = useState('');
+
 
          const handleSubmit =(e) => {
              e.preventDefault();
-             const blog ={title, body, author};
+             const blog ={title, body, author, ingredients};
              
             setIsPending(true);
 
@@ -23,14 +26,12 @@ const Create = () => {
                  setIsPending(false);
                  history.push('/'); //sends the user back to the home page after a blog has been created
              })
-             
-             
-
-         }
+        }
 
     return (     
+        
     <div className="create">
-    <h2>Add a New Blog.</h2>
+    <h2 className = 'add-new'>Add a New Blog.</h2>
     <form onSubmit={handleSubmit}>
         <label> Blog title:</label>
         <input type="text"
@@ -42,13 +43,21 @@ const Create = () => {
         <textarea required value={body} 
         onChange={(e) => setBody(e.target.value)}  
         ></textarea>
+         <label> Blog ingredients:</label>
+        <textarea required value={ingredients} 
+        onChange={(e) => setIngredients(e.target.value)}
+        ></textarea>
+        <label> Blog instructions:</label>
+        <textarea required value={instructions} 
+        onChange={(e) => setInstruction(e.target.value)}
+        ></textarea>
         <label>Blog author:</label>
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>
             <option value="Alex">Alex</option>
             <option value="Dan">Dan</option>
         </select>
-        {!isPending && <button>Add Blog</button>}
-        {isPending && <button disabled>Adding blog...</button>}
+        {!isPending &&  <button className = 'add-blog'>Add Blog</button>}
+        {isPending && <button className='add-blog' disabled>Adding blog...</button>}
 
     </form>
     </div> );

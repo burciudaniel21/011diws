@@ -134,9 +134,10 @@ border-top: 0.14vw solid #ff80c4;
   
 }
 .create h2 {
-  font-size: 20px;
+  font-size: 35px;
   color: #ff80c4;
   margin-bottom: 30px;
+  margin-top: 5%;
 }
 .create input, .create textarea, .create select {
   width: 100%;
@@ -154,3 +155,24 @@ border-top: 0.14vw solid #ff80c4;
   border-radius: 8px;
   cursor: pointer;
 }
+.blog-ingredients{
+  white-space: pre-line;  
+ vertical-align: bottom;
+}
+.blog-instructions{
+  white-space: pre-line;  
+  vertical-align: bottom;
+}
+.delete {
+  margin-bottom: 3%;
+}
+.loading{
+  text-align: center;
+padding-top: 16.5%;
+padding-bottom: 16.5%;
+font-size: 50px;
+}
+.add-blog{
+  margin-bottom: 3%;
+}
+

@@ -7,7 +7,7 @@ function Background() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mov' autoPlay loop muted />
-      <h1>LET'S GET BAKING</h1>
+      <h1>LET'S <span className='title'>GET BAKING</span></h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
         <Button
@@ -17,7 +17,6 @@ function Background() {
         >
           GET STARTED
         </Button>
-
       </div>
     </div>
   );

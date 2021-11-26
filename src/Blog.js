@@ -16,6 +16,10 @@ const Blog = () => {
                 <textarea required></textarea>
             </select>
             <button>Add Blog</button>
+            <label>Ingredients</label>
+            <input 
+            type = "text"/>
+            <button>Add Ingredient</button>
             </form>
     </div>
     
