@@ -1,10 +1,12 @@
-import Navbar from './Navbar';
-import Home from './Home';
+import Navbar from './components/Navbar';
+import BlogsDisplay from './BlogsDisplay';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import HomePage from './HomePage';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Create from './Create';
+import NotFound from './NotFound';
+import Home from './components/pages/Home';
 import BlogDetails from './BlogDetails';
+import Footer from './components/Footer';
 
 function App() {
   const title = "Welcome to the blog";
@@ -17,20 +19,26 @@ function App() {
           <Navbar />
           <div className="content">
           <Switch>
-            <Route exact path="/">
-            <Home />
+            <Route exact path="/" exact component= {Home}>
+            </Route>
+            <Route exact path="/blogs">
+            <BlogsDisplay/>
             </Route>
             <Route path="/create">
             <Create />
             </Route>       
             <Route path="/blogs/:id">
-            <BlogDetails />
+            <BlogDetails />           
+            </Route>
+            <Route path="*">
+              <NotFound />            
             </Route>
           </Switch>
+          <Footer/>
           </div>
-      <HomePage/>
       </div>
       </Router>
+
   );
 }
 //'/>
