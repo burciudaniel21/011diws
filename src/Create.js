@@ -9,11 +9,12 @@ const Create = () => {
         const history = useHistory();
         const [ingredients, setIngredients] = useState('');
         const [instructions, setInstruction] = useState('');
-
+        const [optionalInstructions, setOptionalInstruction] = useState('');
+        const [image, setImage] = useState('');
 
          const handleSubmit =(e) => {
              e.preventDefault();
-             const blog ={title, body, author, ingredients};
+             const blog ={title, body, author, ingredients, instructions, optionalInstructions, image};
              
             setIsPending(true);
 
@@ -50,6 +51,10 @@ const Create = () => {
         <label> Blog instructions:</label>
         <textarea required value={instructions} 
         onChange={(e) => setInstruction(e.target.value)}
+        ></textarea>
+        <label> Optional instructions:</label>
+        <textarea value={optionalInstructions} 
+        onChange={(e) => setOptionalInstruction(e.target.value)}
         ></textarea>
         <label>Blog author:</label>
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>

@@ -6,7 +6,7 @@ import './Background.css';
 function Background() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mov' autoPlay loop muted />
+      <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>LET'S <span className='title'>GET BAKING</span></h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>

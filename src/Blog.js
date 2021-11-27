@@ -17,7 +17,7 @@ const Blog = () => {
             </select>
             <button>Add Blog</button>
             <label>Ingredients</label>
-            <input 
+            <input required
             type = "text"/>
             <button>Add Ingredient</button>
             </form>
