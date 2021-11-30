@@ -12,7 +12,8 @@
       "instagram":"https://www.instagram.com/bbcfood/?hl=en",
       "twitter":"https://twitter.com/BBCFood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
       "youtube":"https://www.youtube.com/c/BBCGoodFood",
-      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg"
+      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg",
+      "category":"popular #"
 
     },
     {
@@ -27,7 +28,8 @@
       "instagram":"https://www.instagram.com/bbcfood/?hl=en",
       "twitter":"https://twitter.com/BBCFood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
       "youtube":"https://www.youtube.com/c/BBCGoodFood",
-      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg"
+      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg",
+      "category":"christmas"
     },
     {
       "title": "Cookies",
@@ -41,7 +43,8 @@
       "instagram":"https://www.instagram.com/bbcfood/?hl=en",
       "twitter":"https://twitter.com/BBCFood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
       "youtube":"https://www.youtube.com/c/BBCGoodFood",
-      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg"
+      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg",
+      "category":"popular"    
       
     },
     {
@@ -56,7 +59,8 @@
       "instagram":"https://www.instagram.com/bbcfood/?hl=en",
       "twitter":"https://twitter.com/BBCFood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
       "youtube":"https://www.youtube.com/c/BBCGoodFood",
-      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg"
+      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg",
+      "category":"christmas"
     },
     {
       "title": "Pinwheel Cookies",
@@ -70,7 +74,23 @@
       "instagram":"https://www.instagram.com/bbcfood/?hl=en",
       "twitter":"https://twitter.com/BBCFood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
       "youtube":"https://www.youtube.com/c/BBCGoodFood",
-      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg"
+      "background":"http://2.bp.blogspot.com/-3Gc4FD786tw/UUdjNDZbpKI/AAAAAAAADM4/9042jLVh7BY/s1600/bbcgoodfood.jpg",
+      "category":"popular"
+    },
+
+    {
+      "title": "Cherry Christmas Cake",
+      "body": "This is a lovely white cake with glace cherries and sultanas added for those of you who don't want to go to the trouble of making fruit cakes. This freezes well.",
+      "author": "BBC FOOD",
+      "ingredients": "\n\n225g caster sugar\n225g butter\n2 eggs\n115ml orange juice\n225g plain flour\n1 teaspoon baking powder\n330g sultanas\n225g halved glace cherries",
+      "id": 6,
+      "image":"http://ukcdn.ar-cdn.com/recipes/port250/eda25bff-9ab2-4969-b25c-e0c040d93434.jpg",
+      "facebook":"https://www.facebook.com/allrecipes",
+      "instagram":"https://www.instagram.com/explore/tags/allrecipes/?hl=enn",
+      "twitter":"https://twitter.com/Allrecipes?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+      "youtube":"https://www.youtube.com/channel/UC4tAgeVdaNB5vD_mBoxg50w",
+      "background":"https://uspto.report/TM/86384319/mark",
+      "category":"christmas"
     }
   ]
 }

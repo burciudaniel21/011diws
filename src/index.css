@@ -194,3 +194,16 @@ font-size: 50px;
 top: -29px;  }
 }
 
+.filterRecipes{
+  font-size: 35px;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  color: #ff80c4;
+  border: 4px solid black;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-color: #ff80c4;
+  
+}

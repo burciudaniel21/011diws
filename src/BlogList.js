@@ -11,7 +11,6 @@ const BlogList = ({blogs, title, facebook, instagram, youtube, twitter, backgrou
     
     return ( 
     <div className="blog-list">
-        
     {blogs.map((blog) => (
         <div style= {{ backgroundImage: `url(${blog.background} )`}} className="blog-preview" key={blog.id}>
             <Link to={`/blogs/${blog.id}`}>

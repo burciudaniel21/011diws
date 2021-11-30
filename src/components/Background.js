@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './Background.css';
-
+import Logo from './Logo.png';
 function Background() {
   return (
     <div className='hero-container'>
@@ -18,6 +18,7 @@ function Background() {
           GET STARTED
         </Button>
       </div>
+      <img src={Logo} alt="" className="logo-container" />
     </div>
   );
 }
