@@ -15,22 +15,22 @@ export default function Footer() {
       <h3 className='footer-title'>@GetBaking</h3>
       <a
         href="*"
-        className="youtube social" 
+        className="youtube s-link" 
       >
         <FontAwesomeIcon icon={faYoutube} size="2x" />
       </a>
       <a
         href="*"
-        className="facebook social"
+        className="facebook s-link"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
-      <a href="*" className="twitter social">
+      <a href="*" className="twitter s-link">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
       <a
         href="*"
-        className="instagram social"
+        className="instagram s-link"
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </a>          

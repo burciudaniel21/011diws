@@ -7,7 +7,7 @@ const BlogsDisplay = () => {
     return ( 
         <div className="blogs">
         {error && <div>{error}</div>}
-        {isLoading && <div>Loading...</div>}
+        {isLoading && <div className='loading'>Loading...</div>}
         {blogs && <BlogList blogs={blogs} title="All Blogs"/>}
         </div>
 
