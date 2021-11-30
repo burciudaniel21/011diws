@@ -1,16 +1,33 @@
+import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react-dom/cjs/react-dom.development';
 import BlogList from './BlogList';
 import useFetch from './useFetch';
+import { useState } from "react";
 
 const BlogsDisplay = () => {
     const {data: blogs, isLoading, error} = useFetch('http://localhost:8000/blogs');
+    // var filter="christmas";
+    const[filter, setFilter] = useState('popular');
 
     return ( 
+        
         <div className="blogs">
+        <select className="filterRecipes"
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+        >
+          <option value="popular">Popular</option>
+          <option value="christmas">Christmas</option>
+          <option value="">All</option>
+
+        </select>
         {error && <div>{error}</div>}
         {isLoading && <div className='loading'>Loading...</div>}
-        {blogs && <BlogList blogs={blogs} title="All Blogs"/>}
-        </div>
+        {/* {blogs && <BlogList blogs={blogs} title="All Blogs"/>} */}
+        {blogs && <BlogList blogs={blogs.filter((blog) => blog.category === filter)}  />}
+        {blogs && <BlogList blogs={blogs.filter((blog) => blog.category === filter)}  />}
 
+        </div>    
+        
     );
 
 }
