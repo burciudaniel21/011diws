@@ -11,6 +11,7 @@
     bottom: 0;
     width: 100%;
     z-index: 999;
+    /* position: absolute; */
 
   }
 
@@ -23,14 +24,17 @@
   @media screen and (max-width: 960px){
       .footer-title{
           margin-right: 15%;
+          /* position: fixed; */
+          bottom: 0;
       }
   }
 
-  a.social {
+  a.s-link {
     width: 100%;
     display: inline-block;
+
   }
-  a.instagram{
+  a.s-link{
     margin-right: 3%;
   }
 

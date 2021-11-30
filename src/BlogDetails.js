@@ -26,21 +26,20 @@ const BlogDetails = () => {
                  <p className = 'blog-written'>Written by {blog.author}</p>
                  <p className = 'blog-ingredients'>Ingredients: {blog.ingredients}</p>
                  <Accordion>
-  <Accordion.Item className='blog-instructions' eventKey="0">
-    <Accordion.Header>Instructions:</Accordion.Header>
-    <Accordion.Body className='instructions-text'>
-    {blog.instructions}
-    </Accordion.Body>
-  </Accordion.Item>
-  <Accordion.Item className='blog-instructions' eventKey="1">
-    <Accordion.Header>Secondary instructions:</Accordion.Header>   
-    <Accordion.Body className='instructions-text'>
-    {blog.optionalInstructions}
-    </Accordion.Body>
-  </Accordion.Item>
-</Accordion>
-                 {/* <p className = 'blog-instructions'>Instructions: {blog.instructions}</p> */}
-                 {/* <div>{blog.body}</div> */}
+                <Accordion.Item className='blog-instructions' eventKey="0">
+                    <Accordion.Header>Instructions:</Accordion.Header>
+                    <Accordion.Body className='instructions-text'>
+                    {blog.instructions}
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item className='blog-instructions' eventKey="1">
+                    <Accordion.Header>Secondary instructions:</Accordion.Header>   
+                    <Accordion.Body className='instructions-text'>
+                    {blog.optionalInstructions}
+                    </Accordion.Body>
+                </Accordion.Item>
+                </Accordion>
+
                  <button className = 'delete' onClick={handleClick}>Delete</button>
              </article>
          )}               
