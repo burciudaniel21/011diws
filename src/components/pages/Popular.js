@@ -1,15 +1,15 @@
-import BlogList from './BlogList';
-import useFetch from './useFetch';
+import BlogList from '../../BlogList.js';
+import useFetch from '../../useFetch';
 import { useState } from "react";
 
-const BlogsDisplay = () => {
+const Popular = () => {
     const {data: blogs, isLoading, error} = useFetch('http://localhost:8000/blogs');
     // var filter="christmas";
     var queryString = window.location.search;
     var urlParameters = new URLSearchParams(queryString);
     var filter2 = urlParameters.get('filter');
     console.log(filter2);
-    const[filter, setFilter] = useState('');
+    const[filter, setFilter] = useState('popular');
 
     return ( 
         
@@ -38,16 +38,4 @@ const BlogsDisplay = () => {
     );
 
 }
-export default BlogsDisplay;
-//<button onClick={() => setName('Alex')}>Change name.</button> -> button on click event
-
-//<BlogList blogs={blogs.filter((blog) => blog.author === 'Dan')} title = "Dan's Blogs."/> filter blog
-
-//<BlogList blogs={blogs}/> -> prop
-/*
-const[name, setName] = useState('User');
-const handleClick = () => {
-    console.log('Welcome to GetBaking blog.')
-    setName ='';
-<p>{name}</p>
-<button onClick={handleClick}>Click here</button>*/
+export default Popular;

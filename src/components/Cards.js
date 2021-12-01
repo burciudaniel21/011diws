@@ -9,7 +9,7 @@ function Cards() {
       <h2 className="company-description"><span className="title">GetBaking</span> wants to help you find your passion for baking. The site presents you with a blog of recipes from sources such as BBC Food with easy to follow directions and descriptive information.</h2> 
       <h2 className="company-description">Do you have any great recipe you would like to share with others? Use the Create Blog feature and share it with the others.</h2>
       </div> 
-      <h1>Check out these <span className='popular'>POPULAR </span>recipes!</h1>
+      <h1 className='popularRecipes'>Check out these <span className='popular'>POPULAR </span>recipes!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
