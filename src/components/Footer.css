@@ -38,5 +38,10 @@
     margin-right: 3%;
   }
 
+  .s-link:hover{
+    border-bottom: solid 6px#ffff80;
+    transform: scale(1.2);
+  }
+
   
 

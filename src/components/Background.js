@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './Background.css';
-import Logo from './Logo.png';
+import Logo from '../images/Logo.png';
 function Background() {
   return (
     <div className='hero-container'>

@@ -23,6 +23,9 @@ const BlogsDisplay = () => {
         {error && <div>{error}</div>}
         {isLoading && <div className='loading'>Loading...</div>}
         {/* {blogs && <BlogList blogs={blogs} title="All Blogs"/>} */}
+     
+        {(blogs && filter === "") && <BlogList blogs={blogs} title="All Blogs"/>}
+
         {blogs && <BlogList blogs={blogs.filter((blog) => blog.category === filter)}  />}
         {blogs && <BlogList blogs={blogs.filter((blog) => blog.category === filter)}  />}
 
