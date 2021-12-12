@@ -7,7 +7,7 @@ import {
     faInstagram
   } from "@fortawesome/free-brands-svg-icons";
 
-const BlogList = ({blogs, title, facebook, instagram, youtube, twitter, background}) => {
+const BlogList = ({blogs}) => {
     
     return ( 
     <div className="blog-list">
