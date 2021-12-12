@@ -17,7 +17,7 @@
   border-bottom: 0.14vw solid #ff80c4;
   background:no-repeat;
   background-position-x: right;
-  background-position-y: top; 
+  background-position-y: center; 
   background-size: 25%;
   padding-top: 3%;
   padding-bottom: 5%;
@@ -167,14 +167,17 @@ font-size: 50px;
 
 .socials{
   display: flex;
-  float: right;
+  float: left;
   position: relative;
   top: -5px;
+  margin-left: 3%;
   right: 3%;
+  
 }
 
 .social{
   margin-right: 5%;
+  border-radius: 20%;
 
 }
 
@@ -189,12 +192,15 @@ font-size: 50px;
 }
 
 @media screen and (max-width: 960px) {
-  .socials {
+  .socials {  
   right: 9%;
-top: -29px;  }
+  top: -17px;  
+  margin-left: 10%;
+}
 }
 
 .filterRecipes{
+  text-align: center;
   font-size: 35px;
   margin-left: 10%;
   margin-bottom: 3%;
