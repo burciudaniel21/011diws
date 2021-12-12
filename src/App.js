@@ -7,10 +7,9 @@ import NotFound from './NotFound';
 import Home from './components/pages/Home';
 import BlogDetails from './BlogDetails';
 import Footer from './components/Footer';
+import Popular from './components/pages/Popular';
 
 function App() {
-  const title = "Welcome to the blog";
-  const likes = 50;
 
   //const person = {name: 'Dan', age: 24};
   return (
@@ -29,6 +28,9 @@ function App() {
             </Route>       
             <Route path="/blogs/:id">
             <BlogDetails />           
+            </Route>
+            <Route path="/popular">
+              <Popular />            
             </Route>
             <Route path="*">
               <NotFound />            
