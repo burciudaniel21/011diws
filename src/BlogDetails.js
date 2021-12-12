@@ -1,6 +1,7 @@
 import { useHistory, useParams } from "react-router";
 import useFetch from "./useFetch";
 import Accordion from 'react-bootstrap/Accordion';
+import { useState } from "react";
 
 const BlogDetails = () => {
     const {id} = useParams();
@@ -12,11 +13,13 @@ const BlogDetails = () => {
         }).then(() => {
             history.push('/')
         })
-       
     }
+    const[toggle, setToggle] = useState('1');
     
     return ( 
+        
         <div className="blog-details">
+             
          {isLoading && <div className='loading'>Loading...</div>}
          {error && <div>{error}</div>}
          {blog && (
@@ -24,12 +27,13 @@ const BlogDetails = () => {
                  <h2 className='blog-title'>{blog.title}</h2>
                  <img src={blog.image} alt="Biscotti" className="FinalProduct" />
                  <p className = 'blog-written'>Written by {blog.author}</p>
-                 <p className = 'blog-ingredients'>Ingredients: {blog.ingredients}</p>
+                 <p className = 'blog-ingredients'>Ingredients: {toggle === '1' && blog.ingredients} {toggle === '2' && blog.ingredientsOunce}</p>
                  <Accordion>
                 <Accordion.Item className='blog-instructions' eventKey="0">
                     <Accordion.Header>Instructions:</Accordion.Header>
                     <Accordion.Body className='instructions-text'>
                     {blog.instructions}
+
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item className='blog-instructions' eventKey="1">
@@ -41,9 +45,17 @@ const BlogDetails = () => {
                 </Accordion>
 
                  <button className = 'delete' onClick={handleClick}>Delete</button>
-             </article>
-         )}               
+                <select className="toggleMeasurment"
+                value={toggle}
+                onChange={(e) => setToggle(e.target.value)}
+                >
+                <option value="1">Gram</option>
+                <option value="2">Ounce</option>
+                </select>
+            </article>
+    )}               
         </div>
+        
      );
 }
  

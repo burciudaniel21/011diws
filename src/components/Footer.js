@@ -14,22 +14,22 @@ export default function Footer() {
     <div className="footer">
       <h3 className='footer-title'>@GetBaking</h3>
       <a
-        href="*"
+        href="https://www.youtube.com/"
         className="youtube s-link" 
       >
         <FontAwesomeIcon icon={faYoutube} size="2x" />
       </a>
       <a
-        href="*"
+        href="https://www.facebook.com/"
         className="facebook s-link"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
-      <a href="*" className="twitter s-link">
+      <a href="https://twitter.com/?lang=en" className="twitter s-link">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
       <a
-        href="*"
+        href="https://www.instagram.com/"
         className="instagram s-link"
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
