@@ -30,7 +30,7 @@ const BlogDetails = () => {
          {blog && (
              <article className ='blog-content'>
                  <h2 className='blog-title'>{blog.title}</h2>
-                 <img src={blog.image} alt="Biscotti" className="FinalProduct" />
+                 <img src={blog.image} alt={blog.title} className="FinalProduct" />
                  <p className = 'blog-written'>Written by {blog.author}</p>
                  <p className = 'blog-ingredients'>Ingredients: {toggle === '1' && blog.ingredients} {toggle === '2' && blog.ingredientsOunce}</p>
                  <Accordion>
