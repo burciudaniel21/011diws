@@ -2,6 +2,10 @@ import { useHistory, useParams } from "react-router";
 import useFetch from "./useFetch";
 import Accordion from 'react-bootstrap/Accordion';
 import { useState } from "react";
+import {ReactToPrint} from "react-to-print";
+import {React} from "react";
+import {Button} from "react-bootstrap";
+import {userRef} from "react";
 
 const BlogDetails = () => {
     const {id} = useParams();
@@ -13,6 +17,7 @@ const BlogDetails = () => {
         }).then(() => {
             history.push('/')
         })
+        this.componentRef = React.createRef();
     }
     const[toggle, setToggle] = useState('1');
     
@@ -53,9 +58,8 @@ const BlogDetails = () => {
                 <option value="2">Ounce</option>
                 </select>
             </article>
-    )}               
+    )}    
         </div>
-        
      );
 }
  
