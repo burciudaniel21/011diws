@@ -11,7 +11,6 @@ import Popular from './components/pages/Popular';
 
 function App() {
 
-  //const person = {name: 'Dan', age: 24};
   return (
     <Router>
           <div className="App">
