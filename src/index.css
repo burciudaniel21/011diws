@@ -236,4 +236,16 @@ font-size: 50px;
   color: white;
   margin-bottom: 3%;
   float: left;
+  margin-right: 37%;
+}
+#printButton{
+  margin: auto;
+  align-items: center;
+}
+@media print
+{    
+    #printButton
+    {
+        display: none !important;
+    }
 }

@@ -26,7 +26,7 @@ function Navbar() {
     window.addEventListener('resize', showButton);
         return (
             <>
-              <nav className='navbar'>
+              <nav className='navbar' id = "no-print">
                 <div className='navbar-container'>
                   <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                     GetBaking

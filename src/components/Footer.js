@@ -11,7 +11,7 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id = "no-print">
       <h3 className='footer-title'>@GetBaking</h3>
       <a
         href="https://www.youtube.com/"

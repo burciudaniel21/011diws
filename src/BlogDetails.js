@@ -49,8 +49,8 @@ const BlogDetails = () => {
                 </Accordion.Item>
                 </Accordion>
 
-                 <button className = 'delete' onClick={handleClick}>Delete</button>
-                <select className="toggleMeasurment"
+                 <button className = 'delete' id = "no-print" onClick={handleClick}>Delete</button>
+                <select className="toggleMeasurment" id = "no-print"
                 value={toggle}
                 onChange={(e) => setToggle(e.target.value)}
                 >
@@ -59,6 +59,7 @@ const BlogDetails = () => {
                 </select>
             </article>
     )}    
+            <Button id="printButton" onClick={() => window.print()}>Print recipe</Button>
         </div>
      );
 }
